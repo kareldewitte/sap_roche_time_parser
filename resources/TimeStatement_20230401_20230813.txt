@@ -1,0 +1,414 @@
+Time Statement
+from 01.04.2023 to 13.08.2023
+
+
+
+                                                                                    14.08.2023 Page 1 / 9
+
+
+                                                  Personal/Organizational Data
+                                                     Personnel Number             Cost Center                     Position
+
+                                                        10310023                1006730201
+                                                     Organizational Unit         Personnel Area              Personnel Subarea
+
+Mr Karel De Witte                                 Architecture Chapter -            CH11                          CH00
+42 rue de l'europe                                      Hiring Date             Employee Group               Employee Subgroup
+
+F-68680 KEMBS                                          01.02.2019                      1                            E4
+                                                     Time Recording No.        Work Schedule Rule          Time Management Status
+
+                                                        00209451                     TZR                   1st time evaluation
+
+
+
+
+Month: April - 2023
+
+Individual Daily Results
+Day                                                     from          to        Hrs.        Skeleton Flex.               DWS
+                                                                                            time     Time
+
+01 SA    Employee not present                                                                                            FREI
+02 SU    Employee not present                                                                                            FREI
+Weekly Total :      01.04.2023 -     02.04.2023                                                     0,00        0,00
+03 MO    Working remotely                                08:00         12:00         4,00           8,00        0,00 TZR
+         Business absence                                14:00         18:00         4,00
+04 TU    Business absence                                09:00         17:30         8,50           8,00        0,00 TZR
+05 WE    Working remotely                                08:00         13:00         5,00           7,50        0,50- TZR
+         Working from home                               13:00         16:00         3,00
+06 TH    Working from home                               08:00         16:00         8,00           7,50        3,50 TZR B
+06 TH    1/2 Day Off                                                                                                     TZR B
+07 FR    Good Friday                                                                                                     TZR A
+08 SA    Employee not present                                                                                            FREI
+09 SU    Easter                                                                                                          FREI
+Weekly Total :      03.04.2023 -     09.04.2023                                                   31,00         3,00
+10 MO    Easter Monday                                                                                                   TZR A
+11 TU    Terminal-ID : 2012 / 2012                       07:55         16:59         9,07           8,57        0,57 TZR
+12 WE    Working from home                               08:00         13:00         5,00           5,00        3,00- TZR
+13 TH    Working remotely                                                                           8,00        0,00 TZR
+14 FR    Working from home                               08:00         14:00         6,00           5,75        2,25- TZR
+15 SA    Employee not present                                                                                            FREI
+16 SU    Employee not present                                                                                            FREI
+Weekly Total :      10.04.2023 -     16.04.2023                                                   27,32         4,68-
+17 MO    Vacation                                                                                   8,00        0,00 TZR
+18 TU    Vacation                                                                                   8,00        0,00 TZR
+19 WE    Working from home                               08:00         10:00         2,00           2,00        6,00- TZR
+20 TH    Terminal-ID : 2012 / 2012                       10:28         17:04         6,60           6,35        1,65- TZR
+21 FR    Working from home                               08:00         10:30         2,50           2,50        5,50- TZR
+22 SA    Employee not present                                                                                            FREI
+                                                                                                 14.08.2023 Page 2/9
+
+
+
+
+Day                                                                      from        to       Hrs.       Skeleton Flex.         DWS
+                                                                                                         time     Time
+
+23 SU     Employee not present                                                                                                  FREI
+Weekly Total :        17.04.2023 -     23.04.2023                                                          26,85     13,15-
+24 MO     Vacation                                                                                          8,00       0,00 TZR
+25 TU     Vacation                                                                                          8,00       0,00 TZR
+26 WE     Working from home                                                  08:00   17:00       9,00       8,50       0,50 TZR
+27 TH     Terminal-ID : 2012 /                                               07:53   16:40       8,78       8,28       0,28 TZR
+28 FR     Terminal-ID : / 2009                                               07:14   13:47       6,54       6,29       1,71- TZR
+29 SA     Employee not present                                                                                                  FREI
+30 SU     Employee not present                                                                                                  FREI
+Weekly Total :        24.04.2023 -     30.04.2023                                                          39,07       0,93-
+
+
+Monthly Overview for Key Date 30.04.2023
+Skeleton time                                                                        124,24
+Monthly balance               Previous      Increase/ Correction Offset          Compen- Reduction Current        Planned      Balance
+                              month         decrease                             sation            balance        Offset       minus
+                                                                                                                               planned
+Flextime balance                     0,00       15,76-        0,00       0,00        0,00      0,00       28,55       0,00        28,55
+
+
+Yearly balance                Balance       Accrual      Correction Offset       Compen- Reduction Current        Planned      Balance
+                              previous      act. year                            sation            balance        Offset       minus
+                              year                                                                                             planned
+Leave                                         184,10          0,00     31,60-        0,00      0,00      152,50       0,00       152,50
+Leave previous year                  0,40                     0,00       0,40-       0,00      0,00        0,00       0,00         0,00
+Additional leave                                 0,00         0,00       0,00        0,00      0,00        0,00       0,00         0,00
+Additional leave prev. year          0,00        0,00         0,00       0,00        0,00      0,00        0,00       0,00         0,00
+Shift leave                          0,00        0,00         0,00       0,00        0,00      0,00        0,00       0,00         0,00
+Shift leave previous year            0,00        0,00         0,00       0,00        0,00      0,00        0,00       0,00         0,00
+Partnership leave                    0,00        0,00         0,00       0,00        0,00      0,00        0,00       0,00         0,00
+
+
+Time Transfer Specifications
+Begin               End                Time Transfer Type                                     Duration
+
+01.04.2023          01.04.2023         Migration JAZ-balance                                                                      44,31
+01.04.2023          01.04.2023         Migration Vacation PrevY                                                                    0,40
+01.04.2023          01.04.2023         Vacation CHRIS Used                                                                         0,00
+
+
+Time Transfer Specifications
+Day       Wagetype        Wagetype text                                                                            Number
+
+30        9407            Vacation balance hrs                                                                                   152,50
+
+30        9408            JAZ balance hours                                                                                       28,55
+                                                                     14.08.2023 Page 3/9
+
+
+
+
+Month: May - 2023
+
+Individual Daily Results
+Day                                               from    to      Hrs.      Skeleton Flex.      DWS
+                                                                            time     Time
+
+01 MO    Terminal-ID : 0400 /                     08:44   17:55      9,18      8,68     0,68 TZR
+02 TU    Terminal-ID : 2009 / 2014                08:21   16:35      8,24      7,74     0,26- TZR
+03 WE    Working from home                        07:00   16:00      9,00      8,50     0,50 TZR
+04 TH    Terminal-ID : 2012 /                     07:55   17:00      9,08      8,58     0,58 TZR
+05 FR    Working from home                        06:00   15:00      9,00      8,50     0,50 TZR
+06 SA    Employee not present                                                                   FREI
+07 SU    Employee not present                                                                   FREI
+Weekly Total :     01.05.2023 -      07.05.2023                               42,00     2,00
+08 MO    Terminal-ID : / 2009                     07:15   15:47      8,54      8,04     0,04 TZR
+09 TU    Working remotely                         08:00   16:30      8,50      8,00     0,00 TZR
+10 WE    Working from home                        07:00   16:00      9,00      8,50     0,50 TZR
+11 TH    Terminal-ID : 2015 /                     08:31   17:38      9,11      8,61     0,61 TZR
+12 FR    Working from home                        07:00   15:30      8,50      8,00     0,00 TZR
+13 SA    Employee not present                                                                   FREI
+14 SU    Employee not present                                                                   FREI
+Weekly Total :     08.05.2023 -      14.05.2023                               41,15     1,15
+15 MO    Working from home                        08:00   17:00      9,00      8,50     0,50 TZR
+16 TU    Terminal-ID : 2009 /                     08:33   17:13      8,66      8,16     0,16 TZR
+17 WE    Working from home                        08:00   10:00      2,00      2,00     2,00- TZR B
+17 WE    1/2 Day Off                                                                            TZR B
+18 TH    Ascension                                                                              TZR A
+19 FR    Day after Ascension                                                                    TZR A
+20 SA    Employee not present                                                                   FREI
+21 SU    Employee not present                                                                   FREI
+Weekly Total :     15.05.2023 -      21.05.2023                               18,66     1,34-
+22 MO    Terminal-ID : 2009 / 2014                10:22   18:06      7,72      7,22     0,78- TZR
+23 TU    Terminal-ID : 2015 /                     08:33   17:03      8,50      8,00     0,00 TZR
+24 WE    Working from home                        07:00   15:30      8,50      8,00     0,00 TZR
+25 TH    Terminal-ID : / 2014                     07:30   14:55      7,43      6,93     1,07- TZR
+26 FR    Working from home                        07:00   10:00      3,00      3,00     5,00- TZR
+27 SA    Employee not present                                                                   FREI
+28 SU    Whit Sunday                                                                            FREI
+Weekly Total :     22.05.2023 -      28.05.2023                               33,15     6,85-
+29 MO    Whit Monday                                                                            TZR A
+30 TU    Working from home                        07:00   17:00     10,00      9,00     1,00 TZR
+                                                                                              14.08.2023 Page 4/9
+
+
+
+
+Day                                                                   from        to       Hrs.      Skeleton Flex.       DWS
+                                                                                                     time     Time
+
+31 WE     Terminal-ID : 2012 /                                            07:19   16:29       9,17      8,67       0,67 TZR
+
+
+Monthly Overview for Key Date 31.05.2023
+Skeleton time                                                                     152,63
+Monthly balance               Previous   Increase/ Correction Offset          Compen- Reduction Current       Planned    Balance
+                              month      decrease                             sation            balance       Offset     minus
+                                                                                                                         planned
+Flextime balance                 28,55        3,37-        0,00       0,00        0,00      0,00      25,18       0,00      25,18
+
+
+Yearly balance                Balance    Accrual      Correction Offset       Compen- Reduction Current       Planned    Balance
+                              previous   act. year                            sation            balance       Offset     minus
+                              year                                                                                       planned
+Leave                                      184,10          0,00       0,00        0,00      0,00     152,50      44,00     108,50
+Leave previous year               0,40                     0,00       0,00        0,00      0,00       0,00       0,00       0,00
+Additional leave                              0,00         0,00       0,00        0,00      0,00       0,00       0,00       0,00
+Additional leave prev. year       0,00        0,00         0,00       0,00        0,00      0,00       0,00       0,00       0,00
+Shift leave                       0,00        0,00         0,00       0,00        0,00      0,00       0,00       0,00       0,00
+Shift leave previous year         0,00        0,00         0,00       0,00        0,00      0,00       0,00       0,00       0,00
+Partnership leave                 0,00        0,00         0,00       0,00        0,00      0,00       0,00       0,00       0,00
+
+
+Time Transfer Specifications
+Day       Wagetype       Wagetype text                                                                         Number
+
+31        9407           Vacation balance hrs                                                                              152,50
+
+31        9408           JAZ balance hours                                                                                  25,18
+                                                                     14.08.2023 Page 5/9
+
+
+
+
+Month: June - 2023
+
+Individual Daily Results
+Day                                               from    to      Hrs.      Skeleton Flex.      DWS
+                                                                            time     Time
+
+01 TH    Terminal-ID : 2012 / 2013                07:52   16:04      8,21      7,71     0,29- TZR
+02 FR    Terminal-ID : / 0255                     06:43   11:55      5,19      5,19     2,81- TZR
+03 SA    Employee not present                                                                   FREI
+04 SU    Employee not present                                                                   FREI
+Weekly Total :     29.05.2023 -      04.06.2023                               30,57     1,43-
+05 MO    Working from home                        07:00   09:00      2,00     11,08     3,08 TZR
+         Terminal-ID : 2009 / 2015                09:23   19:04      9,70
+06 TU    Terminal-ID : 2009 /                     08:33   17:30      8,95      8,45     0,45 TZR
+07 WE    Working from home                        07:00   16:30      9,50      9,00     1,00 TZR
+08 TH    Terminal-ID : 2012 /                     08:36   16:42      8,09      7,59     0,41- TZR
+09 FR    Working from home                        07:17   16:30      9,22      8,72     0,72 TZR
+10 SA    Employee not present                                                                   FREI
+11 SU    Employee not present                                                                   FREI
+Weekly Total :     05.06.2023 -      11.06.2023                               44,84     4,84
+12 MO    Terminal-ID : 2012 / 2012                09:15   17:41      8,42      7,92     0,08- TZR
+13 TU    Terminal-ID : 2009 /                     08:28   17:33      9,07      8,57     0,57 TZR
+14 WE    Working from home                        06:30   15:30      9,00      8,50     0,50 TZR
+15 TH    Terminal-ID : / 2009                     08:00   16:17      8,30      7,80     0,20- TZR
+16 FR    Working from home                        08:00   16:30      8,50      8,00     0,00 TZR
+17 SA    Employee not present                                                                   FREI
+18 SU    Employee not present                                                                   FREI
+Weekly Total :     12.06.2023 -      18.06.2023                               40,79     0,79
+19 MO    Terminal-ID : / 2012                     07:38   15:26      7,79      7,29     0,71- TZR
+20 TU    Terminal-ID : 2012 /                     07:22   17:34     10,20      9,20     1,20 TZR
+21 WE    Working from home                        07:00   16:30      9,50      9,00     1,00 TZR
+22 TH    Terminal-ID : /                          07:45   17:04      9,32      8,82     0,82 TZR
+23 FR    Working from home                        07:00   15:00      8,00      7,50     0,50- TZR
+24 SA    Employee not present                                                                   FREI
+25 SU    Employee not present                                                                   FREI
+Weekly Total :     19.06.2023 -      25.06.2023                               41,81     1,81
+26 MO    Terminal-ID : / 2012                     07:43   14:35      6,87      6,62     1,38- TZR
+27 TU    Debit from JAZ account                                                8,00     8,00- TZR
+28 WE    Working from home                        07:00   17:00     10,00      9,00     1,00 TZR
+29 TH    Terminal-ID : 2012 / 2012                07:52   16:20      8,46      7,96     0,04- TZR
+30 FR    Working from home                        05:30   14:00      8,50      7,50     0,50- TZR
+
+
+Monthly Overview for Key Date 30.06.2023
+                                                                                            14.08.2023 Page 6/9
+
+
+
+
+Skeleton time                                                                   179,42
+Monthly balance               Previous   Increase/ Correction Offset         Compen- Reduction Current    Planned    Balance
+                              month      decrease                            sation            balance    Offset     minus
+                                                                                                                     planned
+Flextime balance                 25,18        3,42        0,00       8,00-       0,00     0,00    20,60       0,00      20,60
+
+
+Yearly balance                Balance    Accrual     Correction Offset       Compen- Reduction Current    Planned    Balance
+                              previous   act. year                           sation            balance    Offset     minus
+                              year                                                                                   planned
+Leave                                      184,10         0,00       0,00        0,00     0,00   152,50      40,00     112,50
+Leave previous year               0,40                    0,00       0,00        0,00     0,00     0,00       0,00       0,00
+Additional leave                              0,00        0,00       0,00        0,00     0,00     0,00       0,00       0,00
+Additional leave prev. year       0,00        0,00        0,00       0,00        0,00     0,00     0,00       0,00       0,00
+Shift leave                       0,00        0,00        0,00       0,00        0,00     0,00     0,00       0,00       0,00
+Shift leave previous year         0,00        0,00        0,00       0,00        0,00     0,00     0,00       0,00       0,00
+Partnership leave                 0,00        0,00        0,00       0,00        0,00     0,00     0,00       0,00       0,00
+
+
+Time Transfer Specifications
+Day       Wagetype       Wagetype text                                                                     Number
+
+30        9407           Vacation balance hrs                                                                          152,50
+
+30        9408           JAZ balance hours                                                                              20,60
+                                                                     14.08.2023 Page 7/9
+
+
+
+
+Month: July - 2023
+
+Individual Daily Results
+Day                                               from    to      Hrs.      Skeleton Flex.      DWS
+                                                                            time     Time
+
+01 SA    Employee not present                                                                   FREI
+02 SU    Employee not present                                                                   FREI
+Weekly Total :      26.06.2023 -     02.07.2023                               39,08     8,92-
+03 MO    Working from home                        07:00   10:00      3,00      8,56     0,56 TZR
+         Terminal-ID : 2012 / 2012                11:19   16:52      5,56
+04 TU    Terminal-ID : / 2012                     07:00   15:54      8,91      8,41     0,41 TZR
+05 WE    Working from home                        09:00   18:00      9,00      8,50     0,50 TZR
+06 TH    Terminal-ID : 2012 / 2012                11:53   15:25      3,52      3,52     4,48- TZR
+07 FR    Debit from JAZ account                                                8,00     8,00- TZR
+08 SA    Employee not present                                                                   FREI
+09 SU    Employee not present                                                                   FREI
+Weekly Total :      03.07.2023 -     09.07.2023                               36,99    11,01-
+10 MO    Vacation                                                              8,00     0,00 TZR
+11 TU    Vacation                                                              8,00     0,00 TZR
+12 WE    Vacation                                                              8,00     0,00 TZR
+13 TH    Vacation                                                              8,00     0,00 TZR
+14 FR    Vacation                                                              8,00     0,00 TZR
+15 SA    Employee not present                                                                   FREI
+16 SU    Employee not present                                                                   FREI
+Weekly Total :      10.07.2023 -     16.07.2023                               40,00     0,00
+17 MO    Working from home                        06:00   16:00     10,00      9,00     1,00 TZR
+18 TU    Terminal-ID : 2012 / 2012                07:52   14:31      6,66      9,00     1,00 TZR
+         Working remotely                         15:00   17:35      2,58
+19 WE    Terminal-ID : 2012 / 2012                07:55   16:57      9,03      8,53     0,53 TZR
+20 TH    Working remotely                         07:00   16:00      9,00      8,50     0,50 TZR
+21 FR    Vacation                                                              8,00     0,00 TZR
+22 SA    Employee not present                                                                   FREI
+23 SU    Employee not present                                                                   FREI
+Weekly Total :      17.07.2023 -     23.07.2023                               43,03     3,03
+24 MO    Terminal-ID : 2009 / 2014                05:49   14:24      8,58      7,91     0,09- TZR
+25 TU    Working from home                        08:00   18:00     10,00      9,00     1,00 TZR
+26 WE    Terminal-ID : / 2012                     08:15   16:17      8,04      7,54     0,46- TZR
+27 TH    Terminal-ID : 2012 /                     08:40   17:32      8,88      8,38     0,38 TZR
+28 FR    Working remotely                         08:00   17:00      9,00      8,50     0,50 TZR
+29 SA    Employee not present                                                                   FREI
+                                                                                               14.08.2023 Page 8/9
+
+
+
+
+Day                                                                     from       to       Hrs.    Skeleton Flex.        DWS
+                                                                                                    time     Time
+
+30 SU     Employee not present                                                                                            FREI
+Weekly Total :        24.07.2023 -     30.07.2023                                                      41,33      1,33
+31 MO     Day Off                                                                                                         TZR A
+
+
+Monthly Overview for Key Date 31.07.2023
+Skeleton time                                                                      161,35
+Monthly balance               Previous      Increase/ Correction Offset         Compen- Reduction Current    Planned     Balance
+                              month         decrease                            sation            balance    Offset      minus
+                                                                                                                         planned
+Flextime balance                 20,60           1,35        0,00       8,00-       0,00     0,00    13,95       0,00       13,95
+
+
+Yearly balance                Balance       Accrual     Correction Offset       Compen- Reduction Current    Planned     Balance
+                              previous      act. year                           sation            balance    Offset      minus
+                              year                                                                                       planned
+Leave                                         184,10         0,00     48,00-        0,00     0,00   104,50       0,00      104,50
+Leave previous year                  0,40                    0,00       0,00        0,00     0,00     0,00       0,00        0,00
+Additional leave                                 0,00        0,00       0,00        0,00     0,00     0,00       0,00        0,00
+Additional leave prev. year          0,00        0,00        0,00       0,00        0,00     0,00     0,00       0,00        0,00
+Shift leave                          0,00        0,00        0,00       0,00        0,00     0,00     0,00       0,00        0,00
+Shift leave previous year            0,00        0,00        0,00       0,00        0,00     0,00     0,00       0,00        0,00
+Partnership leave                    0,00        0,00        0,00       0,00        0,00     0,00     0,00       0,00        0,00
+
+
+Time Transfer Specifications
+Day       Wagetype       Wagetype text                                                                         Number
+
+31        9407           Vacation balance hrs                                                                              104,50
+
+31        9408           JAZ balance hours                                                                                  13,95
+                                                                                                14.08.2023 Page 9/9
+
+
+
+
+Month: August - 2023
+
+Individual Daily Results
+Day                                                                      from        to      Hrs.      Skeleton Flex.         DWS
+                                                                                                       time     Time
+
+01 TU     Swiss National Holiday                                                                                              TZR A
+02 WE     Working remotely                                                   07:30   16:35      9,08      8,58       0,58 TZR
+03 TH     Terminal-ID : 2009 /                                               07:51   17:08      9,28      8,78       0,78 TZR
+04 FR     Working from home                                                  05:00   13:30      8,50      7,00       1,00- TZR
+05 SA     Employee not present                                                                                                FREI
+06 SU     Employee not present                                                                                                FREI
+Weekly Total :        31.07.2023 -     06.08.2023                                                        24,36       0,36
+07 MO     Working from home                                                  08:00   16:30      8,50      8,00       0,00 TZR
+08 TU     Terminal-ID : / 2015                                               08:00   17:20      9,34      8,84       0,84 TZR
+09 WE     Terminal-ID : / 2012                                               07:40   15:48      8,14      7,64       0,36- TZR
+10 TH     Working from home                                                  08:00   16:30      8,50      8,00       0,00 TZR
+11 FR     Working from home                                                  08:00   13:00      5,00      5,00       3,00- TZR
+12 SA     Employee not present                                                                                                FREI
+13 SU     Employee not present                                                                                                FREI
+Weekly Total :        07.08.2023 -     13.08.2023                                                        37,48       2,52-
+
+
+Monthly Overview for Key Date 13.08.2023
+Skeleton time                                                                        61,84
+Monthly balance               Previous      Increase/ Correction Offset          Compen- Reduction Current      Planned      Balance
+                              month         decrease                             sation            balance      Offset       minus
+                                                                                                                             planned
+Flextime balance                 13,95           2,16-        0,00       0,00        0,00     0,00      11,79       0,00        11,79
+
+
+Yearly balance                Balance       Accrual      Correction Offset       Compen- Reduction Current      Planned      Balance
+                              previous      act. year                            sation            balance      Offset       minus
+                              year                                                                                           planned
+Leave                                         184,10          0,00       0,00        0,00     0,00     104,50       0,00       104,50
+Leave previous year                  0,40                     0,00       0,00        0,00     0,00       0,00       0,00         0,00
+Additional leave                                 0,00         0,00       0,00        0,00     0,00       0,00       0,00         0,00
+Additional leave prev. year          0,00        0,00         0,00       0,00        0,00     0,00       0,00       0,00         0,00
+Shift leave                          0,00        0,00         0,00       0,00        0,00     0,00       0,00       0,00         0,00
+Shift leave previous year            0,00        0,00         0,00       0,00        0,00     0,00       0,00       0,00         0,00
+Partnership leave                    0,00        0,00         0,00       0,00        0,00     0,00       0,00       0,00         0,00
+
+
+Time Transfer Specifications
+Day       Wagetype       Wagetype text                                                                           Number
+
+
+If you have any questions, please contact your time administrator. Sandra Stoll
+
