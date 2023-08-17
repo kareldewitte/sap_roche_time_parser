@@ -1,3 +1,66 @@
+mod utils;
+
+use wasm_bindgen::prelude::*;
+
+// When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
+// allocator.
+#[cfg(feature = "wee_alloc")]
+#[global_allocator]
+static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
+
+
+/// Read one byte from the file at a given offset.
+#[wasm_bindgen]
+pub fn read_file(file: web_sys::File) -> f64 {
+    let mut wf = file;
+    wf.size()
+
+    // let content = pdf_extract::extract_text("resources/TimeStatement_20230401_20230817.pdf").unwrap();
+    
+    // // for line in content.lines(){
+    // //     println!("{}",line);
+    // // }
+
+	// let lines = content.lines();//read_lines("resources/TimeStatement_20230401_20230813.txt");
+    // let mut time_office = 0.0;
+    // let mut time_travel = 0.0;
+    // let mut time_home = 0.0;
+    // for line in lines{
+    //     match  parsers::parse_timeline(line) {
+    //         Ok(res)=>{
+    //             let timeline = res.1;
+    //             if timeline.timeType == TimeType::ONSITE || timeline.timeType == TimeType::REM {
+    //                 time_office = time_office + timeline.time;
+    //             } else
+    //             if timeline.timeType == TimeType::WFH  {
+    //                 time_home = time_home + timeline.time;
+    //             } else
+    //             if timeline.timeType == TimeType::TRAVEL {
+    //                 time_travel = time_travel + timeline.time;
+    //             }
+
+    //         },
+    //         Err(_)=>{
+
+    //         }
+            
+    //     };
+    // }
+    // let sum = time_home + time_office+time_travel;
+    // println!("wfh:{}h - {}%, onsite:{}h - {}%, travel:{}, total work:{}",time_home,time_home/sum,time_office,time_office/sum,time_travel/sum,sum);  
+
+    // Ok(())
+
+
+
+}
+
+
+
+
+
+
+
 #[derive(Clone, Default, Debug)]
 pub struct TimeLine {
 	pub time: f32,
@@ -31,7 +94,6 @@ impl From<&str> for TimeType {
 }
 
 
-
 pub type BoxError = std::boxed::Box<dyn
 	std::error::Error   // must implement Error to satisfy ?
 	+ std::marker::Send // needed for threads
@@ -39,9 +101,10 @@ pub type BoxError = std::boxed::Box<dyn
 >;
 
 
-
 pub mod parsers {
-	use nom::{error::context, branch::{alt}, bytes::complete::{tag_no_case, tag}, sequence::{tuple, separated_pair}, combinator::opt, character::complete::{alpha1, digit1, multispace0, space0}};
+	use std::any;
+
+use nom::{error::context, branch::{alt}, bytes::complete::{tag_no_case, tag}, sequence::{tuple, separated_pair, pair}, combinator::opt, character::complete::{alpha1, digit1, multispace0, space0, space1, digit0, anychar}, complete::take, multi::count};
     use crate::TimeLine;
     use time::Time;
     use super::TimeType;
@@ -50,11 +113,34 @@ pub mod parsers {
 		nom::bytes::complete::is_not(" \t|")(i)
 	}
 
+    fn terminal_number(input: &str) -> nom::IResult<&str, &str> {
+        context(
+            "terminal_number",
+            alt((tag(" "),digit1),
+        ))(input)
+        .map(|(next_input,res)| (next_input,res.into()))
+    }
+
+    fn terminal_slot(input: &str) -> nom::IResult<&str, &str> {
+        context(
+            "terminal_slot",
+            tuple((
+                terminal_number,
+                alt((tag(" "),tag(""))),
+                tag("/"),
+                alt((tag(" "),tag(""))),
+                terminal_number ),)
+                ,
+        )(input)
+        .map(|(next_input,res)| (next_input,""))
+
+    }
+
     fn terminal_id(input: &str) -> nom::IResult<&str, &str> {
         context(
             "terminal_id",
             tuple(
-                (tag_no_case("Terminal-ID"),space0,tag(":"),space0,opt(digit1),opt(space0),tag("/"),space0,alt((space0,digit1))),),
+                (tag_no_case("Terminal-ID"),space0,tag(": "),terminal_slot),),
         )(input)
         .map(|(next_input,res)| (next_input,res.0))
 
@@ -174,14 +260,26 @@ pub mod parsers {
 		}
 
         #[test]
+        fn test_terminal_number(){
+            
+            let _line ="2012 / 2012 07:53   16:40       8,78       8,28       0,28 TZR";
+            let _line0 ="2015 /  08:31   17:38      9,11      8,61     0,61 TZR";
+            let _line1 =" / 2009  08:00  16:17  8,30   7,80   0,20- TZR";
+            let _line2 ="Terminal-ID : 2015 /  08:31   17:38      9,11      8,61     0,61 TZR";
+            assert_eq!(terminal_number(_line1),Ok(("/ 2009  08:00  16:17  8,30   7,80   0,20- TZR", " ")));
+            assert_eq!(terminal_number(_line0),Ok((" /  08:31   17:38      9,11      8,61     0,61 TZR", "2015")));
+            
+        }
+
+        #[test]
         fn test_terminal_id(){
             
-            let _line ="Terminal-ID : 2012 /                                               07:53   16:40       8,78       8,28       0,28 TZR";
-            let _line0 ="Terminal-ID : 2015 /                     08:31   17:38      9,11      8,61     0,61 TZR";
-            println!("{:?}",terminal_id(_line).unwrap());
-            println!("{:?}",terminal_id(_line0).unwrap());
+            let _line ="Terminal-ID : 2012 / 2012 07:53   16:40       8,78       8,28       0,28 TZR";
+            let _line0 ="Terminal-ID : 2015 /  08:31   17:38      9,11      8,61     0,61 TZR";
+            let _line1 ="Terminal-ID :  / 2009  08:00  16:17  8,30   7,80   0,20- TZR";
+            let _line2 ="Terminal-ID : 2015 /  08:31   17:38      9,11      8,61     0,61 TZR";
             
-            //assert_eq!(timetype(_line), Ok(("yay", TimeType::REM)));
+            assert_eq!(terminal_id(_line),Ok((" 07:53   16:40       8,78       8,28       0,28 TZR", "Terminal-ID")));
 
         }
 
