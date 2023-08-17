@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  </head>
+  <body>
+    <input type="file" accept="file/pdf" id="file_submit" />
+    <script>
+        const pdf = document.getElementById('file_submit');
+         pdf.addEventListener('change', function (e) {
+          const file = e.target.files[0];
+          const url = URL.createObjectURL(file);
+          // Do something with the audio file.
+        
+        });
+      </script>
+    </audio>
+    <div id="results"></div>
+  </body>
+</html>
