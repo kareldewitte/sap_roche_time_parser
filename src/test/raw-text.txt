@@ -185,12 +185,12 @@ TZR
 Personal/Organizational Data
   
 Personnel Number
-10310023
+10300000
 Cost Center
-1006730201
+10060000
 Position
 Organizational Unit
-Architecture Chapter -
+XXXXXXXX Chapter -
 Personnel Area
 CH11
 Personnel Subarea
@@ -207,9 +207,6 @@ Work Schedule Rule
 TZR
 Time Management Status
 1st time evaluation
-Mr Karel De Witte
-42 rue de l’europe
-F-68680 KEMBS
 17.08.2023
 Page 2/10
 Day
@@ -1874,7 +1871,4 @@ Partnership leave
 Page 10/10
 Time Transfer Specifications
 Day
-Wagetype
-Wagetype text
-Number
-If you have any questions, please contact your time administrator. Sandra Stoll
+
