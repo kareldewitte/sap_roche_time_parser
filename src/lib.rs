@@ -1,6 +1,9 @@
 mod utils;
 
+use js_sys::ArrayBuffer;
 use wasm_bindgen::prelude::*;
+use lopdf::Document;
+use web_sys::Blob;
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
@@ -11,50 +14,65 @@ static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 /// Read one byte from the file at a given offset.
 #[wasm_bindgen]
-pub fn read_file(file: web_sys::File) -> f64 {
-    let mut wf = file;
-    wf.size()
+pub fn read_file(le:usize, data: &[u8]) -> String {
 
-    // let content = pdf_extract::extract_text("resources/TimeStatement_20230401_20230817.pdf").unwrap();
-    
-    // // for line in content.lines(){
-    // //     println!("{}",line);
-    // // }
-
-	// let lines = content.lines();//read_lines("resources/TimeStatement_20230401_20230813.txt");
-    // let mut time_office = 0.0;
-    // let mut time_travel = 0.0;
-    // let mut time_home = 0.0;
-    // for line in lines{
-    //     match  parsers::parse_timeline(line) {
-    //         Ok(res)=>{
-    //             let timeline = res.1;
-    //             if timeline.timeType == TimeType::ONSITE || timeline.timeType == TimeType::REM {
-    //                 time_office = time_office + timeline.time;
-    //             } else
-    //             if timeline.timeType == TimeType::WFH  {
-    //                 time_home = time_home + timeline.time;
-    //             } else
-    //             if timeline.timeType == TimeType::TRAVEL {
-    //                 time_travel = time_travel + timeline.time;
-    //             }
-
-    //         },
-    //         Err(_)=>{
-
-    //         }
-            
-    //     };
+    //let mut buffer: Vec<u8> = data.iter().take(le).map(|&x| x as u8).collect();
+    let content = extract_text(data);    
+    // for line in content.lines(){
+    //     println!("{}",line);
     // }
-    // let sum = time_home + time_office+time_travel;
+
+	let lines = content.lines();//read_lines("resources/TimeStatement_20230401_20230813.txt");
+    let mut time_office = 0.0;
+    let mut time_travel = 0.0;
+    let mut time_home = 0.0;
+    for line in lines{
+        match  parsers::parse_timeline(line) {
+            Ok(res)=>{
+                let timeline = res.1;
+                if timeline.timeType == TimeType::ONSITE || timeline.timeType == TimeType::REM {
+                    time_office = time_office + timeline.time;
+                } else
+                if timeline.timeType == TimeType::WFH  {
+                    time_home = time_home + timeline.time;
+                } else
+                if timeline.timeType == TimeType::TRAVEL {
+                    time_travel = time_travel + timeline.time;
+                }
+
+            },
+            Err(_)=>{
+
+            }
+            
+        };
+    }
+    let sum = time_home + time_office+time_travel;
     // println!("wfh:{}h - {}%, onsite:{}h - {}%, travel:{}, total work:{}",time_home,time_home/sum,time_office,time_office/sum,time_travel/sum,sum);  
 
-    // Ok(())
-
+    content
+    //buffer.len()
+    
 
 
 }
 
+fn extract_text(data: &[u8]) -> String{
+
+    let res = Document::load_mem(data);
+    let doc = res.unwrap();
+    let pages = doc.get_pages();
+    let mut texts = Vec::new();
+
+    for (i, _) in pages.iter().enumerate() {
+        let page_number = (i + 1) as u32;
+        let text = doc.extract_text(&[page_number]);
+        texts.push(text.unwrap_or_default());
+    }
+
+    texts.join("")
+
+}
 
 
 

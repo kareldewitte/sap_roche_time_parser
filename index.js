@@ -11,15 +11,20 @@ import('./pkg')
     if (parser === null) {
       parser = rust_module;
     }
-
-    const importer = document.getElementById("file_submit");
-    importer.addEventListener("input", event => {
-      
+    const reader = new FileReader();
+    const loader = document.getElementById("file_submit");
+    
+    loader.addEventListener("input", event=>{
       console.log("loaded");
-      let size = parser.read_file(importer.files[0]);
-      console.log(size);
-    });
+      reader.readAsArrayBuffer(loader.files[0]);
+    })
+    
+  
+    reader.onload = function(ev) {  
+      console.log("passing " +reader.result.byteLength);
 
+      console.log(parser.read_file(reader.result.byteLength,new Uint8Array(reader.result)));
+    }
 
   })
   .catch(console.error);
