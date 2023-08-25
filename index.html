@@ -1,8 +1,15 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+   
   </head>
   <body>
+    <div class="h-full bg-slate-200 flex items-center">
+     <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+    <h1 class="text-1xl font-sans font-bold">
+      Please upload your time-statement
+    </h1>
     <input type="file" accept="file/pdf" id="file_submit" />
     <script>
         const pdf = document.getElementById('file_submit');
@@ -12,8 +19,9 @@
           // Do something with the audio file.
         
         });
-      </script>
-    </audio>
+     </script>
+    </div>
     <div id="results"></div>
+  </div>
   </body>
 </html>

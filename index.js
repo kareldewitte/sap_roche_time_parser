@@ -1,5 +1,5 @@
 import Plotly from 'plotly.js-dist-min'
-
+import './css/input.css';
 
 
 
