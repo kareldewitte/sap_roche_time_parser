@@ -49,8 +49,12 @@ pub fn extract_time_data(times:Vec<TimeLine>)->TimeResume{
     }
     let time_sum = time_home + time_office+time_travel;
     //format!("wfh:{}h - {}%, onsite:{}h - {}%, travel:{}, total work:{}",time_home,time_home/sum,time_office,time_office/sum,time_travel/sum,sum)  
+    let ratio_wfh = time_home/time_sum;
+    let ratio_onsite = time_office/time_sum;
+    
     TimeResume{
-        time_office,time_travel,time_home,time_sum,times
+        time_office,time_travel,time_home,time_sum, ratio_wfh,ratio_onsite,
+        times
     }
 }
 
@@ -79,6 +83,10 @@ pub struct TimeResume {
     pub time_travel: f32,
 	pub time_home: f32,
     pub time_sum: f32,
+
+    pub ratio_wfh: f32,
+    pub ratio_onsite: f32,  
+    
     pub times: Vec<TimeLine>
 }
 
@@ -87,6 +95,7 @@ pub struct TimeResume {
 #[derive(Serialize, Deserialize)]
 #[derive(Clone, Default, Debug)]
 pub struct TimeLine {
+    pub day: String,
 	pub time: f32,
     pub time_pause_deducted: f32,
 	pub timeType: TimeType,
@@ -268,9 +277,11 @@ pub mod parsers {
             let time = res.8;
             let timeded = res.9;
             let ttype = res.4;
+            let day = res.0.to_owned()+res.2;
             (
                 next_input,
                 TimeLine {
+                    day: day,
                     time:time,
                     time_pause_deducted: timeded,
                     timeType:ttype
@@ -291,9 +302,11 @@ pub mod parsers {
         .map(|(next_input, res)| {
             let time = 0.0;
             let ttype = res.4;
+            let day = res.0.to_owned()+res.2;
             (
                 next_input,
                 TimeLine {
+                    day: day,
                     time:time,
                     time_pause_deducted: 0.0,
                     timeType:ttype
@@ -314,9 +327,11 @@ pub mod parsers {
         .map(|(next_input, res)| {
             let time = 0.0;
             let ttype = res.4;
+            let day = res.0.to_owned()+res.2;
             (
                 next_input,
                 TimeLine {
+                    day:day,
                     time:time,
                     time_pause_deducted: 0.0,
                     timeType:TimeType::OFF
@@ -341,9 +356,11 @@ pub mod parsers {
             //println!("=>{:?}",res);
             let time = 0.0;
             let ttype = res.4;
+            let day = res.0.to_owned()+res.2;
             (
                 next_input,
                 TimeLine {
+                    day:day,
                     time:time,
                     time_pause_deducted: 0.0,
                     timeType:TimeType::OFF
@@ -371,6 +388,7 @@ pub mod parsers {
             (
                 next_input,
                 TimeLine {
+                    day: "cont'd".to_string(),
                     time:time,
                     time_pause_deducted: 0.0,
                     timeType:ttype
@@ -390,9 +408,11 @@ pub mod parsers {
             println!("=>{:?}",res);
             let time = res.10;
             let ttype = res.4;
+            let day = res.0.to_owned()+res.2;
             (
                 next_input,
                 TimeLine {
+                    day:day,
                     time:time,
                     time_pause_deducted: 0.0,
                     timeType:ttype
@@ -411,9 +431,11 @@ pub mod parsers {
             println!("=>{:?}",res);
             let time = res.7;
             let ttype = res.1;
+            
             (
                 next_input,
                 TimeLine {
+                    day:"cont'd".to_string(),
                     time:time,
                     time_pause_deducted: 0.0,
                     timeType:ttype
@@ -442,6 +464,7 @@ pub mod parsers {
                 not_line_ending,newline))(input)
             .map(|(next,res)|{(next,
                     TimeLine{
+                        day:"na".to_string(),
                         time:0.0,
                         time_pause_deducted: 0.0,
                         timeType:TimeType::NA
