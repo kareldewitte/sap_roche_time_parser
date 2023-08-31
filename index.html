@@ -13,12 +13,17 @@
     <script>
         const pdf = document.getElementById('file_submit');
          pdf.addEventListener('change', function (e) {
-          const file = e.target.files[0];
-          const url = URL.createObjectURL(file);
-          // Do something with the audio file.
+            const file = e.target.files[0];
+            const url = URL.createObjectURL(file);
+            // Do something with the audio file.
         
-        });
-     </script>
+          });
+          
+          function copyPaste(id){
+            navigator.clipboard.writeText(sessionStorage.getItem(id));
+          }  
+        
+        </script>
     </div>
     <div id="diagram" class="bg-white max-w-xl mx-auto rounded overflow-hidden shadow-lg mt-3"></div>
     <div id="details" class="bg-white max-w-xl mx-auto rounded overflow-hidden shadow-lg mt-3">
@@ -26,8 +31,9 @@
         <div class="table-header-group">
           <div class="table-row">
             <div class="table-cell text-center">Day</div>
-            <div class="table-cell text-center">Type</div>
-            <div class="table-cell text-center">Time</div>
+            <div class="table-cell text-center">WFH<br><button id="wfh_times" onclick="copyPaste(this.id)" class="rounded-full bg-slate-200 px-3">copy</button></div>
+            <div class="table-cell text-center">Onsite or in Switzerland<br><button id="onsite_times" onclick="copyPaste(this.id)" class="rounded-full bg-slate-200 px-3">copy</button></div>
+            <div class="table-cell text-center">Travel<br><button id="travel_times" onclick="copyPaste(this.id)" class="rounded-full bg-slate-200 px-3">copy</button></div>
           </div>
         </div>
         <div id="rows" class="table-row-group">
