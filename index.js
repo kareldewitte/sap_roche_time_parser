@@ -17,17 +17,29 @@ function merge(old,nw){
 function reorg(objectArray) {
   return objectArray.reduce(
     function (accumulator, currentObject,index,array) {
-       
+      
+      let prev = array[index-1];
+      
+      if(prev && currentObject && prev.day==currentObject.day){
+        delete array[index];
+      }
+
       if(currentObject && currentObject["day"]=="cont'd"){
-          let prev = array[index-1];
+          
           if(prev){
             array[index-1]=merge(prev,currentObject);
+            delete array[index];
+            
+          
           }
-          delete array[index];
-          //return array;
-        }
-      if(currentObject==undefined)delete array[index];
-       return array;
+          return array;
+      }
+
+      if(currentObject==undefined){
+        delete array[index];
+      }
+      
+      return array;
       }, {});
 }
 
@@ -86,10 +98,11 @@ import('./pkg')
       const details = document.querySelector("#rows");
      
       let times = reorg(remap(json_res.times));
+      console.log(times);
       let wfh_times = [],onsite_times=[],travel_times=[];
-
+      let old_xd = "";
       times.reverse().forEach(x => {
-                if(x.day!='na'){
+                if(x && x.day!='na'){
                   
                   let onsite = Math.round((x.ONSITE+x.REM+Number.EPSILON)*100)/100;
                   details.insertAdjacentHTML(
@@ -103,7 +116,8 @@ import('./pkg')
                   wfh_times.push(x.WFH);
                   onsite_times.push(onsite);   
                   travel_times.push(x.TRAVEL);  
-              }
+                  old_xd = x.day;  
+                }
 
         });
        

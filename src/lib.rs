@@ -272,8 +272,8 @@ pub mod parsers {
                           )),
              )(input)
         .map(|(next_input, res)| {
-            //let (scheme, authority, host, port, path, query, fragment) = res;
-            //println!("=>{:?}",res);
+           
+
             let time = res.8;
             let timeded = res.9;
             let ttype = res.4;
@@ -290,6 +290,35 @@ pub mod parsers {
         })
     }
     
+    pub fn timeline00(input: &str) -> nom::IResult<&str, TimeLine> {
+        context(
+            "timeLine00",
+                tuple((digit1, newline,
+                         alpha1, newline,
+                         timetype, newline,
+                         nbr_comma_new,
+                         nbr_comma_new,
+                         alt((tag("TZR \n"),tag("TZR A\n"),tag("TZR B\n"))),
+                          )),
+             )(input)
+        .map(|(next_input, res)| {
+      
+            let time = res.6;
+            let timeded = res.7;
+            let ttype = res.4;
+            let day = res.0.to_owned()+res.2;
+            (
+                next_input,
+                TimeLine {
+                    day: day,
+                    time:time,
+                    time_pause_deducted: timeded,
+                    timeType:ttype
+                },
+            )
+        })
+    }
+
     pub fn timeline_absence(input: &str) -> nom::IResult<&str, TimeLine> {
         context(
             "timeLine_absence",
@@ -352,8 +381,7 @@ pub mod parsers {
                           )),
              )(input)
         .map(|(next_input, res)| {
-            //let (scheme, authority, host, port, path, query, fragment) = res;
-            //println!("=>{:?}",res);
+           
             let time = 0.0;
             let ttype = res.4;
             let day = res.0.to_owned()+res.2;
@@ -380,8 +408,8 @@ pub mod parsers {
                           )),
              )(input)
         .map(|(next_input, res)| {
-            //let (scheme, authority, host, port, path, query, fragment) = res;
-            //println!("=>{:?}",res);
+          
+
             let time = res.4;
             //let timeded = res.5;
             let ttype = res.0;
@@ -396,6 +424,7 @@ pub mod parsers {
             )
         })
     }
+    
 
 
     pub fn timeline(input: &str) -> nom::IResult<&str, TimeLine> {
@@ -404,7 +433,8 @@ pub mod parsers {
                 tuple((digit1, space0, alpha1, space0, timetype, space0, time, space0, time, space0, number_from_comma, )),
              )(input)
         .map(|(next_input, res)| {
-            //let (scheme, authority, host, port, path, query, fragment) = res;
+            
+
             println!("=>{:?}",res);
             let time = res.10;
             let ttype = res.4;
@@ -427,7 +457,8 @@ pub mod parsers {
                 tuple((space0, timetype, space0, time, space0, time, space0, number_from_comma, )),
              )(input)
         .map(|(next_input, res)| {
-            //let (scheme, authority, host, port, path, query, fragment) = res;
+           
+
             println!("=>{:?}",res);
             let time = res.7;
             let ttype = res.1;
@@ -481,7 +512,7 @@ pub mod parsers {
                     parse_untill_dws,
                     tag("DWS"),newline,
                         many0(
-                            alt((timeline0,timeline0_alt,timeline_absence,timeline_absence_0,timeline_absence_1,parse_weekly))
+                            alt((timeline0,timeline0_alt,timeline00,timeline_absence,timeline_absence_0,timeline_absence_1,parse_weekly))
                         ))
                     ),
                 )(input).map(|(g,r)|
