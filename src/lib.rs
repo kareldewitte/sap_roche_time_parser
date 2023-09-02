@@ -304,7 +304,7 @@ pub mod parsers {
         .map(|(next_input, res)| {
       
             let time = res.6;
-            let timeded = res.7;
+            let timeded = res.6;
             let ttype = res.4;
             let day = res.0.to_owned()+res.2;
             (

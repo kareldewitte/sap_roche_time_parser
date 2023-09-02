@@ -5,10 +5,13 @@ const WasmPackPlugin = require("@wasm-tool/wasm-pack-plugin");
 
 module.exports = {
     entry: ['./index.js'],
+    //mode: 'production',
+    
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
     },
+   
     
     module: {
         rules: [
@@ -17,6 +20,12 @@ module.exports = {
             include: path.resolve(__dirname, 'css'),
             use: ["style-loader", "css-loader","postcss-loader"],
           },
+            {
+              test: /\.png$/,
+              include: path.resolve(__dirname, 'assets'),
+              use: 'file-loader'
+            }
+
         ],
       },
     plugins: [

@@ -4,8 +4,11 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
   </head>
   <body class="bg-slate-200 mb-2">
-    <div class="">
-     <div class="p-6 max-w-sm bg-white mx-auto rounded-xl shadow-lg flex items-center space-x-4">
+    <div class="p-6 max-w-xl bg-white mx-auto rounded-xl shadow-lg items-center space-x-4">
+      <img id="logo"/>
+      <p class="text-xs">Picture of a poster of a movie by Terry Gilliam, used under fair use.</p>
+    </div>
+    <div class="p-6 max-w-xl bg-white mx-auto rounded-xl shadow-lg flex items-center space-x-4">
     <h1 class="text-1xl font-sans font-bold">
       Please upload your time-statement
     </h1>
@@ -25,7 +28,18 @@
         
         </script>
     </div>
-    <div id="diagram" class="bg-white max-w-xl mx-auto rounded overflow-hidden shadow-lg mt-3"></div>
+    <div class="text-xs font-sans p-6 max-w-xl bg-white mx-auto rounded-xl shadow-lg items-left ">
+      <p>1. This tool is not an official Roche tool.</p>
+      <p>2. This tool is to help reporting and verifying wfh/onsite ratio only, even if best effort is made to make it accurate, the creator can not be hold responsible in case of misuse or bad reporting or any consequences due to bad reporting.</p>
+      <p>3. This tool does not store or transfers any user data over any  kind of network, all calculations are done locally in your browser, and deleted after usage.</p>
+      <p>4. You can use the copy button to copy the line you need and paste it in the official Roche google Sheet.</p>
+      <p>5. Only full hours are used, skeleton time is difficult to use, since days might be "hybrid", wfh+onsite and it is unknown to which entity to apply the deduction.</p>
+      <p>6. The sum used for ratio is (wfh+(onsite+remote)+travel), remote working hours in switzerland are considered as onsite.</p>
+      
+      </div>  
+    <div id="diagram" class="bg-white max-w-xl mx-auto rounded overflow-hidden shadow-lg mt-3">
+
+    </div>
     <div id="details" class="bg-white max-w-xl mx-auto rounded overflow-hidden shadow-lg mt-3">
       <div id="table" class="table w-full">
         <div class="table-header-group">
@@ -34,12 +48,10 @@
             <div class="table-cell text-center">WFH<br><button id="wfh_times" onclick="copyPaste(this.id)" class="rounded-full bg-slate-200 px-3">copy</button></div>
             <div class="table-cell text-center">Onsite or in Switzerland<br><button id="onsite_times" onclick="copyPaste(this.id)" class="rounded-full bg-slate-200 px-3">copy</button></div>
             <div class="table-cell text-center">Travel<br><button id="travel_times" onclick="copyPaste(this.id)" class="rounded-full bg-slate-200 px-3">copy</button></div>
+            <div class="table-cell text-center">Skeleton time<br><button id="skel_times" onclick="copyPaste(this.id)" class="rounded-full bg-slate-200 px-3">copy</button></div>
           </div>
         </div>
-        <div id="rows" class="table-row-group">
-
-        </div>
-
+        <div id="rows" class="table-row-group"/>
       </div>
 
     </div>

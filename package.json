@@ -4,6 +4,7 @@
         "serve": "webpack serve"
     },
     "devDependencies": {
+        "@cloudflare/kv-asset-handler": "^0.3.0",
         "@wasm-tool/wasm-pack-plugin": "1.5.0",
         "clean-webpack-plugin": "^4.0.0",
         "copy-webpack-plugin": "^11.0.0",

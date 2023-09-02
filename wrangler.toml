@@ -1,0 +1,14 @@
+# Top-level configuration
+name = "sap-time-parser"
+compatibility_date = "2023-09-01"
+workers_dev = true
+main = "./worker.js"
+
+[site]
+bucket = "./dist"
+include = ["*"]
+
+[dev]
+port = 3002
+
+# exclude = ["ignore_dir"]
